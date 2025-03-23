@@ -5,32 +5,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CicloRibeira</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        nav {
+            background-color: #2d2d2d;
+            color: white;
+            padding: 10px;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav .brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: orange;
+        }
+
+        nav .search-bar {
+            flex: 1;
+            display: flex;
+            gap: 5px;
+        }
+
+        nav .search-bar input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        nav .search-bar button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav .links p {
+            margin: 5px 0;
+        }
+
+        .categories {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+
+        .categories a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .product-card button {
+            background-color: orange;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+            }
+
+            nav .search-bar {
+                margin: 10px 0;
+            }
+
+            .categories a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 
-    <nav style="background-color: #2d2d2d; padding: 10px;">
-        <div
-            style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; color: white;">
-
-
+    <nav>
+        <div>
             <div style="font-size: 24px; font-weight: bold; color: orange;">CicloRibeira</div>
-
-
-            <div style="font-size: 14px;">
-                📍
+            <div style="font-size: 14px;">📍</div>
+            <div style="flex: 1; margin: 0 20px;">
+                <input type="text" placeholder="Pesquisar CicloRibeira">
+                <button>🔍</button>
             </div>
-
-
-            <div style="flex: 1; display: flex; margin: 0 20px;">
-                <input type="text" placeholder="Pesquisar CicloRibeira" style="flex: 1; padding: 10px;">
-                <button style="background-color: orange; padding: 10px;">🔍</button>
-            </div>
-
-
-            <div style="font-size: 14px;">
+            <div>
                 <p>Olá, faça seu login</p>
                 <p>Devoluções e Pedidos</p>
                 <p>🛒 Carrinho</p>
@@ -38,18 +165,17 @@
         </div>
     </nav>
 
-
-    <div style="background-color: #444; padding: 10px;">
-        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-around; color: white;">
-            <a href="index.html" style="text-decoration: none; color: white;">Mais Vendidos</a>
-            <a href="bicicletas.html" style="text-decoration: none; color: white;">Bicicletas</a>
-            <a href="acessorios.html" style="text-decoration: none; color: white;">Acessórios</a>
-            <a href="componentes.html" style="text-decoration: none; color: white;">Componentes</a>
-            <a href="shimano.html" style="text-decoration: none; color: white;">Shimano</a>
-            <a href="novidades.html" style="text-decoration: none; color: white;">Novidades na Loja</a>
+    <!-- Category Bar -->
+    <div class="category-bar">
+        <div>
+            <a href="index.html">Mais Vendidos</a>
+            <a href="bicicletas.html">Bicicletas</a>
+            <a href="acessorios.html">Acessórios</a>
+            <a href="componentes.html">Componentes</a>
+            <a href="shimano.html">Shimano</a>
+            <a href="novidades.html">Novidades na Loja</a>
         </div>
     </div>
-
 
     <section style="text-align: center; padding: 20px;">
 
