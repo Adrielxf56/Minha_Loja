@@ -1,0 +1,89 @@
+Componente 1  
+Site: https://www.lojagtsm1.com.br/componentes/chave-de-acionamento-piscafarol-buzina-dk36-para-v8q8
+Nome:Chave de acionamento Pisca/farol/ buzina DK36 para V8/Q8
+Imagem: componente1.jpg  
+Preço: R$ 117,00
+
+Componente 2  
+Site:  https://www.lojagtsm1.com.br/componentes/garfos/garfo-suspensao-29-100mm-gts-sport-steel
+Nome:  Garfo Suspensão 29 100mm GTS Sport Steel
+Imagem: componente2.jpg  
+Preço:  R$ 80,10
+
+Componente 3  
+Site: https://www.lojagtsm1.com.br/acessorios/sinalizacao/refletor-olho-de-gato-para-roda-de-magnesio
+Nome:  Refletor olho de gato para roda de Magnésio
+Imagem: componente3.jpg  
+Preço:  R$ 17,10
+
+Componente 4  
+Site: https://www.lojagtsm1.com.br/componentes/garfo-suspensao-aro-29-160-mm-x-fusion-trace-rc-eixo-boost-tapared-all-mountain-enduro
+Nome:  Garfo Suspensão aro 29 160 mm X Fusion TRACE RC Eixo Boost Tapared All Mountain Enduro
+Imagem: componente4.jpg  
+Preço:  R$ 6.000,00
+
+Componente 5  
+Site:  https://www.lojagtsm1.com.br/componentes/garfos/garfo-suspensao-aro-29-140-mm-x-fusion-slide-rc-eixo-boost-tapared-all-mountain-enduro
+Nome:  Garfo Suspensão aro 29 140 mm X Fusion Slide RC Eixo Boost Tapared All Mountain Enduro
+Imagem: componente5.jpg  
+Preço:  R$ 2.331,00
+
+Componente 6  
+Site:  https://www.lojagtsm1.com.br/componentes/garfos/garfo-suspensao-aro-29-x-fusion-rc32-eixo-boost-100mm-tapared
+Nome:  Garfo Suspensão aro 29 100mm X Fusion RC32 Trava no Guidão Eixo Boost Tapared
+Imagem: componente6.jpg  
+Preço:  R$ 1.799,10
+
+Componente 7  
+Site:  https://www.lojagtsm1.com.br/componentes/canote-de-selim-gtsm1-400mm-27-2-com-carrinho
+Nome: Canote de selim Gtsm1 27.2 400mm com carrinho integrado 
+Imagem: componente7.jpg  
+Preço:  R$ 26,91
+
+Componente 8  
+Site:  https://www.lojagtsm1.com.br/componentes/sistema-de-marchas/kit-21-marchas-l-twoo-a2-cassete-cambio-dianteiro-cambio-traseiro-cassete-e-trocador
+Nome:  Kit 21 marchas LTwoo A2 Cassete, Câmbio dianteiro, câmbio traseiro e trocadores
+Imagem: componente8.jpg  
+Preço:  R$ 224,10
+
+Componente 9  
+Site:  https://www.lojagtsm1.com.br/componentes/aro-29-gtsm1-venus-disc-double-wall-36-furos?variant_id=12133
+Nome:  Aro 29 Gtsm1 Venus Disc Double Wall 36 Furos
+Imagem: componente9.jpg  
+Preço:  R$ 39,60
+
+Componente 10  
+Site:  https://www.lojagtsm1.com.br/componentes/cubos/par-de-cubos-cassete-32-furos-tsw-com-eixo-traseiro-12mm-dianteiro-9mm
+Nome:  Cubo Cassete 32 Furos Tsw Com Eixo Traseiro 12mm Dianteiro 9mm
+Imagem: componente10.jpg  
+Preço:  R$ 494,10
+
+Componente 11  
+Site:  https://www.lojagtsm1.com.br/manopla-para-bicicleta-byorn-mtb?variant_id=17177
+Nome:  Manopla para bicicleta mtb
+Imagem: componente11.jpg  
+Preço:  R$ 10,80
+
+Componente 12  
+Site:  https://www.lojagtsm1.com.br/kit-cambio-e-trocador-gtsm1-xrx12
+Nome:  Kit Câmbio e Trocador Gtsm1 XRX12
+Imagem: componente12.jpg  
+Preço:  R$ 557,91
+
+Componente 13  
+Site: https://www.lojagtsm1.com.br/componentes/pneu/camara-de-ar-gts-m1-29-presta  
+Nome:  Câmara de ar 29 Gtsm1 válvula Presta bico fino
+Imagem: componente13.jpg  
+Preço:  R$ 12,51
+
+Componente 14  
+Site:  https://www.lojagtsm1.com.br/componentes/gancheiras/gancheira-gtsm1-para-quadro-2-0
+Nome:  Gancheira alumínio para quadro 2.0 GTSM1
+Imagem: componente14.jpg  
+Preço:  R$ 35,91
+
+Componente 15  
+Site:  https://www.lojagtsm1.com.br/componentes/display-lcd-m5-48v-para-bicicleta-eletrica-v8
+Nome:  Display LCD E-bike V8 48V
+Imagem: componente15.jpg  
+Preço:  R$ 454,50
