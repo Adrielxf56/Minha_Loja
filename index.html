@@ -2,52 +2,238 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Meta tags essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#FF5722"> <!-- Cor da barra de navegação -->
+    <meta name="description" content="Compre com facilidade na CicloRibeira. Descubra ofertas incríveis de bicicletas e acessórios.">
+    <meta name="keywords" content="compras online, bicicletas, acessórios, ofertas, CicloRibeira">
+    <meta name="author" content="CicloRibeira">
 
-      <!-- Meta tags essenciais -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-      <meta name="theme-color" content="#FF5722"> <!-- Cor da barra de navegação -->
-      <meta name="description" content="Compre com facilidade na CicloRibeira. Descubra ofertas incríveis de bicicletas e acessórios.">
-      <meta name="keywords" content="compras online, bicicletas, acessórios, ofertas, CicloRibeira">
-      <meta name="author" content="CicloRibeira">
-  
-      <!-- Título -->
-      <title>CicloRibeira - Bicicletas e Ofertas</title>
-  
-      <!-- Favicon -->
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
-  
-      <!-- Estilos externos -->
-      <link rel="stylesheet" href="styles/reset.css"> <!-- Reset global -->
-      <link rel="stylesheet" href="styles/layout.css"> <!-- Estilos base e organização -->
-      <link rel="stylesheet" href="styles/responsive.css"> <!-- Estilos para telas menores -->
-  
-      <!-- Fontes e Ícones -->
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-      <!-- Scripts Essenciais -->
-      <script async src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script> <!-- Lazy Loading -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
-      <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-XXXXXXXXX-X');
-      </script>
-  
-      <!-- Web App Meta Tags -->
-      <link rel="manifest" href="manifest.json"> <!-- Suporte PWA -->
-      <meta name="mobile-web-app-capable" content="yes">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-      <meta name="apple-mobile-web-app-title" content="CicloRibeira">
-      <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <!-- Título -->
+    <title>CicloRibeira - Bicicletas e Ofertas</title>
 
-     
-      
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="styles/reset.css"> <!-- Reset global -->
+    <link rel="stylesheet" href="styles/layout.css"> <!-- Estilos base e organização -->
+    <link rel="stylesheet" href="styles/responsive.css"> <!-- Estilos para telas menores -->
+
+    <!-- Fontes e Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Scripts Essenciais -->
+    <script async src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script> <!-- Lazy Loading -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+
+    <!-- Web App Meta Tags -->
+    <link rel="manifest" href="manifest.json"> <!-- Suporte PWA -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="CicloRibeira">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+
+    <!-- Estilos adicionais para responsividade -->
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Layout básico do cabeçalho */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #FF5722;
+            color: #fff;
+        }
+
+        .header .logo a {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Estilo para a barra de pesquisa */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .search-bar input {
+            width: 80%;
+            padding: 8px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 8px 15px;
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Links de navegação */
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Imagens responsivas */
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Carrossel responsivo */
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .carousel-item {
+            flex: 0 0 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Layout da página de produtos */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .product-card .price {
+            color: #FF5722;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Ajustes para telas menores */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+
+            .search-bar input {
+                width: 60%;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links a {
+                margin: 5px 0;
+            }
+
+            .carousel {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .product-card h3 {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header .logo a {
+                font-size: 1.5rem;
+            }
+
+            .search-bar {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+
+            .search-bar input,
+            .search-bar button {
+                width: 100%;
+            }
+
+            .carousel-item img {
+                width: 100%;
+                height: auto;
+            }
+
+            .product-card {
+                padding: 15px;
+            }
+
+            .product-card .price {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
+
 
 
 <body>
