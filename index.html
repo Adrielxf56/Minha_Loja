@@ -11,145 +11,178 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
+
         header {
-            background: #333;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            flex-wrap: wrap;
         }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .search-container {
+            flex: 1;
+            margin: 0 10px;
+            display: flex;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .search-container button {
+            background-color: orange;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .user-options {
+            font-size: 14px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0px;
+            line-height: 1;
+        }
+
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
         }
+
         nav ul li {
-            margin: 10px;
+            margin: 0 10px;
         }
+
         nav ul li a {
-            color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            color: white;
         }
-        section {
-            padding: 60px 20px;
-            text-align: center;
-            margin-top: 60px;
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
         }
-        .produtos-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: white;
         }
-        .produto {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            max-width: 300px;
-            flex: 1;
-            text-align: center;
-        }
-        .produto:hover {
-            transform: scale(1.05);
-        }
-        .produto img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .produto h3 {
-            color: #333;
-        }
-        .produto p {
-            color: #27ae60;
-            font-weight: bold;
-        }
-        .produto a {
-            display: inline-block;
-            padding: 10px 15px;
-            background: #27ae60;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .produto a:hover {
-            background: #219150;
-        }
-        footer {
-            background: #222;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-            position: relative;
-        }
-        @media (max-width: 600px) {
+
+        @media (max-width: 768px) {
             header {
+                flex-direction: column;
                 text-align: center;
             }
+
+            .search-container {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .user-options {
+                text-align: center;
+                gap: 0px;
+                line-height: 1;
+            }
+
             nav ul {
                 flex-direction: column;
-                padding: 0;
+                display: none;
             }
-            .produto {
-                max-width: 90%;
+
+            nav ul.active {
+                display: flex;
             }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+
+        .anuncios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+
+        @media (max-width: 480px) {
+            .anuncios {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .anuncio {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
         }
     </style>
 </head>
 
-
 <body>
-    
-    <nav style="background-color: #2d2d2d; padding: 10px;">
-        <div
-            style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; color: white;">
-
-
-            <div style="font-size: 24px; font-weight: bold; color: orange;">CicloRibeira</div>
-
-
-            <div style="font-size: 14px;">
-                📍
-            </div>
-
-
-            <div style="flex: 1; display: flex; margin: 0 20px;">
-                <input type="text" placeholder="Pesquisar CicloRibeira" style="flex: 1; padding: 10px;">
-                <button style="background-color: orange; padding: 10px;">🔍</button>
-            </div>
-
-
-            <div style="font-size: 14px;">
-                <p>Olá, faça seu login</p>
-                <p>Devoluções e Pedidos</p>
-                <p>🛒 Carrinho</p>
-            </div>
+    <header>
+        <div class="logo">CicloRibeira</div>
+        
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar CicloRibeira">
+            <button>🔍</button>
         </div>
+        
+        <div class="user-options">
+            <p>Olá, faça seu login</p>
+            <p>Devoluções e Pedidos</p>
+            <p>🛒 Carrinho</p>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    
+    <nav style="background-color: #2d2d2d; padding: 10px;justify-content: center">
+        <ul>
+            
+            <li><a href="index.html">Mais Vendidos</a></li>
+            <li><a href="bicicletas.html">Bicicletas</a></li>
+            <li><a href="acessorios.html">Acessórios</a></li>
+            <li><a href="componentes.html">Componentes</a></li>
+            <li><a href="shimano.html">Shimano</a></li>
+            <li><a href="novidades.html">Novidades na Loja</a></li>
+        </ul>
     </nav>
 
-
-    <div style="background-color: #444; padding: 10px;">
-        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-around; color: white;">
-            <a href="index.html" style="text-decoration: none; color: white;">Mais Vendidos</a>
-            <a href="bicicletas.html" style="text-decoration: none; color: white;">Bicicletas</a>
-            <a href="acessorios.html" style="text-decoration: none; color: white;">Acessórios</a>
-            <a href="componentes.html" style="text-decoration: none; color: white;">Componentes</a>
-            <a href="shimano.html" style="text-decoration: none; color: white;">Shimano</a>
-            <a href="novidades.html" style="text-decoration: none; color: white;">Novidades na Loja</a>
-        </div>
-    </div>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
 
     <section style="text-align: center; padding: 20px;">
 
