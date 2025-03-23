@@ -6,141 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CicloRibeira</title>
     <style>
+        /* Estilos gerais */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
         nav {
             background-color: #2d2d2d;
-            color: white;
             padding: 10px;
         }
 
-        nav .container {
+        nav div {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-        }
-
-        nav .brand {
-            font-size: 24px;
-            font-weight: bold;
-            color: orange;
-        }
-
-        nav .search-bar {
-            flex: 1;
-            display: flex;
-            gap: 5px;
-        }
-
-        nav .search-bar input {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        nav .search-bar button {
-            background-color: orange;
             color: white;
-            border: none;
+        }
+
+        nav input {
+            flex: 1;
             padding: 10px;
-            border-radius: 5px;
+        }
+
+        nav button {
+            background-color: orange;
+            padding: 10px;
+            border: none;
+            color: white;
             cursor: pointer;
         }
 
-        nav .links p {
-            margin: 5px 0;
-        }
-
-        .categories {
-            background-color: #444;
-            color: white;
-            padding: 10px;
-        }
-
-        .categories a {
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-        }
-
         section {
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
 
         section h2 {
-            font-size: 28px;
+            font-size: 24px;
             color: #333;
             font-weight: bold;
-            margin-bottom: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
         }
 
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        section div {
+            display: flex;
+            justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
             padding: 20px;
         }
 
-        .product-card {
+        section div>div {
+            width: 300px;
             border: 1px solid #ccc;
-            border-radius: 5px;
             padding: 20px;
-            background-color: white;
             text-align: center;
+            background-color: white;
         }
 
-        .product-card img {
+        section img {
             width: 100%;
-            height: auto;
-            max-height: 250px;
+            height: 300px;
             object-fit: contain;
             border-radius: 5px;
         }
 
-        .product-card h3 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-
-        .product-card p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        .product-card button {
+        section button {
             background-color: orange;
             color: white;
-            padding: 10px 15px;
+            padding: 12px 20px;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
         }
 
+        /* Melhorias para celular */
         @media (max-width: 768px) {
-            nav .container {
+            nav div {
                 flex-direction: column;
+                text-align: center;
             }
 
-            nav .search-bar {
+            nav input {
                 margin: 10px 0;
+                width: 100%;
             }
 
-            .categories a {
-                display: block;
-                margin: 5px 0;
+            nav button {
+                width: 100%;
             }
 
             section h2 {
-                font-size: 24px;
+                font-size: 20px;
+            }
+
+            section div {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            section div>div {
+                width: 100%;
+            }
+
+            section img {
+                height: auto;
             }
         }
     </style>
@@ -148,25 +121,14 @@
 
 <body>
 
-    <nav style="background-color: #2d2d2d; padding: 10px;">
-        <div
-            style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; color: white;">
-
-
+    <nav>
+        <div>
             <div style="font-size: 24px; font-weight: bold; color: orange;">CicloRibeira</div>
-
-
-            <div style="font-size: 14px;">
-                📍
-            </div>
-
-
+            <div style="font-size: 14px;">📍</div>
             <div style="flex: 1; display: flex; margin: 0 20px;">
-                <input type="text" placeholder="Pesquisar CicloRibeira" style="flex: 1; padding: 10px;">
-                <button style="background-color: orange; padding: 10px;">🔍</button>
+                <input type="text" placeholder="Pesquisar CicloRibeira">
+                <button>🔍</button>
             </div>
-
-
             <div style="font-size: 14px;">
                 <p>Olá, faça seu login</p>
                 <p>Devoluções e Pedidos</p>
@@ -174,7 +136,6 @@
             </div>
         </div>
     </nav>
-
 
     <div style="background-color: #444; padding: 10px;">
         <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-around; color: white;">
